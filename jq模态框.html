@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script crossorigin="anonymous" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="modal-btn">
+
+        <a href="#" class="btn">点我</a>
+    </div>
+    <div class="modal-window">
+        <div class="main">
+            <a href="#" class="modal-class">×</a>
+            <h2 class="modal-title">模态框？拿来吧你</h2>
+            <div class="modal-body">阿巴阿巴阿巴阿巴阿巴</div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $('body').css("background", "url('1.jpg')");
+    $('.modal-btn').css({
+        width: 150,
+        height: 50,
+        marginLeft: 45 + "%",
+        marginTop: 300,
+        borderRadius: 6,
+        backgroundColor: '#fff'
+    }).children('a').css({
+        textDecoration: 'none',
+        display: "block",
+        height: 100 + "%",
+        width: 100 + "%",
+        textAlign: "center",
+        paddingTop: 10,
+        fontSize: 24,
+        color: "#333333"
+    }).hover(function() {
+        $(this).css('color', "rgb(21, 121, 112)")
+    }, function() {
+        $(this).css('color', "#333333")
+    })
+    $('.modal-window').hide();
+    $('.modal-body').css({
+        position: "absolute",
+        top: 80,
+        left: 150
+    })
+    $('.modal-window').css({
+        transition: "all 0.8s",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        backgroundColor: "rgba(26, 22, 22, .5)",
+        opacity: 1,
+        transition: "all 0.8s"
+    }).children('.main').css({
+        background: "rgb(165, 144, 144)",
+        width: 600,
+        height: 180,
+        position: "relative",
+        marginLeft: 650,
+        marginTop: -200,
+        borderRadius: '30px',
+        display: 'flex',
+        transition: " all 0.8s"
+    }).children('a').css({
+        textDecoration: 'none',
+        position: "absolute",
+        right: 20,
+        fontSize: 24,
+    })
+    $(".btn").click(function() {
+        $(".main").animate({
+            top: 400,
+        })
+        $(".modal-window").fadeIn(1000);
+        $('.modal-btn').hide();
+    })
+    $('.modal-class').click(function() {
+        $(".modal-window").fadeOut(500);
+        $('.modal-btn').show(500);
+        $(".main").animate({
+            top: -400,
+        })
+    })
+</script>
+
+</html>

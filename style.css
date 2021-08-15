@@ -1,0 +1,1276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  width: 100%;
+  position: relative;
+}
+body #head {
+  display: flex;
+  width: 100%;
+  padding-bottom: 35%;
+  background-image: url('../imges/header-bg.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+body #head .modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(26, 22, 22, 0.5);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s;
+}
+body #head .modal #left {
+  margin-left: -290px;
+  height: 937px;
+  width: 280px;
+  background-color: #faf9f9;
+  position: absolute;
+  display: flex;
+  z-index: 11;
+  flex-direction: column;
+}
+body #head .modal #left #cha {
+  cursor: pointer;
+}
+body #head .modal #left > img {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 40px;
+  left: 35px;
+}
+body #head .modal #left #na-ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55px;
+  left: 110px;
+}
+body #head .modal #left span {
+  display: inline-block;
+  height: 5%;
+  margin-top: 10px;
+  color: #333333;
+}
+body #head #navbar {
+  width: 100%;
+  height: 90px;
+  margin-left: 18.4444%;
+}
+body #head #navbar > img {
+  z-index: 101;
+  display: none;
+  height: 27px;
+  width: 20px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+}
+body #head #navbar #nav {
+  width: 80%;
+  height: 100%;
+}
+body #head #navbar #nav #areaLogo {
+  position: absolute;
+  z-index: 100;
+  height: 90px;
+  display: inline-block;
+  margin-top: 29px;
+}
+body #head #navbar #nav #areaLogo img {
+  width: 106px;
+  height: 32px;
+  position: absolute;
+}
+body #head #navbar #nav #da {
+  position: absolute;
+  z-index: 100;
+  height: 90px;
+  display: inline-block;
+  margin-top: 29px;
+}
+body #head #navbar #nav #da img {
+  width: 106px;
+  height: 32px;
+  opacity: 0;
+}
+body #head #navbar #nav > ul {
+  text-shadow: 0px 0px 1px #fff;
+  white-space: nowrap;
+  z-index: 100;
+  display: inline-block;
+  display: flex;
+  justify-content: space-evenly;
+  width: 37.89%;
+  position: absolute;
+  left: 35.6%;
+  top: 0%;
+  font-size: 16px;
+  font-weight: 700;
+}
+body #head #navbar #nav > ul:hover a {
+  color: #000;
+}
+body #head #navbar #nav > ul > li {
+  width: 16%;
+  height: 70px;
+  color: #fff;
+}
+body #head #navbar #nav > ul > li:hover ol {
+  transform: scaleY(1);
+}
+body #head #navbar #nav > ul > li ol {
+  width: 100%;
+  transform: scaleY(0);
+  transition: all 0.6s;
+  transform-origin: 50% 0;
+}
+body #head #navbar #nav > ul > li ol li .aList2 {
+  color: #898989;
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: 100;
+}
+body #head #navbar #nav > ul > li ol li .aList2:hover {
+  color: #424141;
+}
+body #head #navbar #nav > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 70px;
+  line-height: 90px;
+  text-align: center;
+}
+body #head #navbar #nav #bq {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  color: #fff;
+  margin-top: 7px;
+  position: absolute;
+  top: 0.8%;
+  left: 75%;
+  opacity: 0;
+  z-index: 100;
+}
+body #head #navbar #nav #qiu {
+  color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 0.8%;
+  text-align: center;
+  right: 18%;
+  height: 27px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body #head #navbar #nav #qiu .ot {
+  font-weight: 600;
+}
+body #head #navbar #nav #qiu .ot,
+body #head #navbar #nav #qiu #ta {
+  letter-spacing: 2px;
+}
+body #head #navbar #nav #qiu #yue,
+body #head #navbar #nav #qiu #ta {
+  color: #F9DAE7;
+  font-weight: 400;
+}
+body #head #navbar #nav #qiu img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  color: #fff;
+  margin-top: 1px;
+}
+body #touminghezi {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: #6d5353;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+@keyframes run {
+  from {
+    height: 70px;
+  }
+  to {
+    height: 422px;
+  }
+}
+@keyframes end {
+  from {
+    height: 422px;
+  }
+  to {
+    height: 70px;
+  }
+}
+body #ad {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: #fdfdfd;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+body #textArea {
+  margin-top: 100px;
+  width: 64%;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: justify;
+  color: #666;
+  margin: 4.8rem auto 0.4rem;
+  text-indent: 2em;
+}
+body #mokuai {
+  width: 63.5%;
+  margin: 45px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #mokuai span:nth-child(1) {
+  position: relative;
+  width: 385px;
+  height: 160px;
+  background-image: url('../imges/introduce.@c14c4f74.png');
+  background-repeat: no-repeat;
+  background-size: 385px 160px;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body #mokuai span:nth-child(1)::before {
+  content: '美图简介';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+body #mokuai span:nth-child(1):hover::before {
+  opacity: 1;
+  transition: all 0.5s;
+}
+body #mokuai span:nth-child(2) {
+  position: relative;
+  width: 385px;
+  height: 160px;
+  background-image: url('../imges/culture.@d8a537c2.png');
+  background-repeat: no-repeat;
+  background-size: 385px 160px;
+  font-size: 30px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 20px 0 20px;
+  cursor: pointer;
+}
+body #mokuai span:nth-child(2)::before {
+  content: '美图文化';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+body #mokuai span:nth-child(2):hover::before {
+  opacity: 1;
+  transition: all 0.5s;
+}
+body #mokuai span:nth-child(3) {
+  position: relative;
+  width: 385px;
+  height: 160px;
+  background-image: url('../imges/team.@b030a264.png');
+  background-repeat: no-repeat;
+  background-size: 385px 160px;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+body #mokuai span:nth-child(3)::before {
+  content: '美图团队';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+}
+body #mokuai span:nth-child(3):hover::before {
+  opacity: 1;
+  transition: all 0.5s;
+}
+body #mokuai span:nth-child(3)::hover a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+}
+body #text-a {
+  border-bottom: 1px solid #E5E5E5;
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  color: #555555;
+  justify-content: center;
+}
+body #text-a .col {
+  border-bottom: 4px solid #f5275f;
+}
+body #text-a li {
+  white-space: nowrap;
+  height: 80px;
+  width: 20.23%;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+}
+body #text-a li:nth-child(2) {
+  width: 22.23%;
+}
+body #text-a li span {
+  display: inline;
+  border-left: 1px solid #E5E5E5;
+  border-right: 1px solid #E5E5E5;
+  padding-left: 37%;
+  padding-right: 37%;
+}
+body #text-a li:nth-child(2) {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+body #middleArea {
+  width: 100%;
+  background-color: #FAFAFA;
+}
+body #middleArea #area-content {
+  padding-bottom: 2.5%;
+  width: 65.05%;
+  margin: 0 auto;
+}
+body #middleArea #area-content .ul {
+  display: none;
+}
+body #middleArea #area-content .t.as {
+  display: none;
+}
+body #middleArea #area-content li {
+  white-space: wrap;
+  display: block;
+  float: left;
+  width: 400px;
+  cursor: pointer;
+}
+body #middleArea #area-content li .meituxiuxiu {
+  float: left;
+  width: 100% ;
+  margin: 45px 0 0 30px  ;
+}
+body #middleArea #area-content li .meituxiuxiu span {
+  font-size: 20px;
+  display: inline-block;
+  color: #333333;
+  margin: 35px 0 0 20px;
+}
+body #middleArea #area-content li .meituxiuxiu img {
+  float: left;
+  width: 90px;
+  height: 90px;
+}
+body #middleArea #area-content li .o {
+  font-size: 14px;
+  display: inline-block;
+  color: #787878;
+  width: 78%;
+  margin: 35px 0 0 30px;
+}
+body #middleArea #area-content li .t {
+  display: flex;
+  font-size: 16px;
+  color: #f5275f;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0 0 -240px;
+}
+body #middleArea #area-content li .t img {
+  margin-left: 15px;
+}
+body #middleArea #area-content .ota {
+  font-size: 16px;
+  color: #fff;
+  height: 100%;
+  width: 180px;
+  background-color: #f5275f;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  margin-left: 42%;
+  margin-top: 40px;
+}
+body .cctv-5 {
+  width: 100%;
+}
+body .cctv-5 p {
+  width: 100%;
+  font-size: 30px;
+  color: #000;
+  margin: 80px 0 0 0;
+  text-align: center;
+}
+body .cctv-6 {
+  width: 100%;
+}
+body .cctv-6 .otb {
+  width: 180px;
+  height: 46px;
+  background-color: #f5275f;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  margin-left: 46%;
+  margin-top: 78px;
+}
+body .cctv-6 ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 68%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+body .cctv-6 ul li {
+  margin-left: 20px;
+  white-space: wrap;
+  width: 578px;
+  padding-bottom: 2%;
+  margin-top: 47px;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+body .cctv-6 ul li:hover {
+  border: 1px solid #E6E6E6;
+}
+body .cctv-6 ul li div {
+  width: 100%;
+}
+body .cctv-6 ul li div img {
+  width: 578px;
+  height: 320px;
+}
+body .cctv-6 ul li div .cctv1 {
+  font-size: 20px;
+  width: 90%;
+  color: #333333;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-line-clamp: 1;
+  /** 显示的行数 **/
+  -webkit-box-orient: vertical;
+}
+body .cctv-6 ul li div .cctv2 {
+  width: 90%;
+  font-size: 14px;
+  line-height: 1.88;
+  letter-spacing: -0.0016rem;
+  text-align: left;
+  color: #787878;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-line-clamp: 3;
+  /** 显示的行数 **/
+  -webkit-box-orient: vertical;
+}
+body .cctv-6 ul li div section {
+  margin-left: 25px;
+  width: 90%;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .cctv-6 ul li div section .cctv3 {
+  color: #B4B4b4;
+}
+body .cctv-6 ul li div section .cctv7 {
+  color: #f5275f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .cctv-6 ul li div section .cctv7 img {
+  width: 32px;
+  height: 32px;
+}
+body .footer {
+  width: 100%;
+  height: 575px;
+  background-color: #F7F7F7;
+}
+body .footer .tabList {
+  transform: scaleY(0);
+}
+body .footer .cctv9 {
+  width: 63.26%;
+  height: 48px;
+  margin: 0 auto;
+}
+body .footer .cctv9 .cctv10 {
+  margin-top: 7%;
+  width: 100%;
+  height: 266px;
+  padding-top: 5%;
+  display: flex;
+  font-size: 18px;
+  color: #808080;
+  justify-content: flex-start;
+}
+body .footer .cctv9 .cctv10 li {
+  white-space: nowrap;
+  height: 48px;
+  width: 204px;
+  text-align: left;
+  line-height: 48px;
+  display: block;
+}
+body .footer .cctv9 .cctv10 li .trs {
+  display: none;
+}
+body .footer .cctv9 .cctv10 li ol {
+  width: 100%;
+  line-height: 78px;
+  height: 100%;
+}
+body .footer .cctv9 .cctv10 li ol li {
+  width: 100%;
+  height: 48px;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+}
+body .footer .cctv9 .cctv10 li ol li .cctv18 {
+  width: 165px;
+  height: 165px;
+  position: absolute;
+  top: -238%;
+  left: 72%;
+  opacity: 0;
+}
+body .footer .cctv9 .cctv10 li ol li a {
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  color: #808080;
+  text-align: center;
+  line-height: 48px;
+}
+body .footer .cctv9 .cctv10 .cctv20 {
+  height: 35px;
+  width: 134px;
+  margin-left: 38%;
+}
+body .footer .cctv9 .cctv10 .cctv20 img {
+  height: 100%;
+  width: 100%;
+}
+body .footer .footerM {
+  width: 63.26%;
+  margin: 0 auto;
+  display: flex;
+  font-size: 16px;
+  margin-top: 364px;
+  color: #808080;
+}
+body .footer .footerM span:nth-child(2) {
+  margin-left: 1%;
+}
+body .footer .footerM span:nth-child(3) {
+  margin-left: 2.8%;
+}
+body .footer .footerM img {
+  width: 55px;
+  height: 15px;
+}
+body .footer .end {
+  width: 63.26%;
+  margin: 1.38% auto;
+  font-size: 14px;
+  color: #B4B4b4;
+}
+body .footer .end a {
+  color: #B4B4b4;
+}
+body .footer .end a:hover {
+  color: #FF3161;
+}
+body .footer .end .cctvf {
+  margin-top: 0.55%;
+  display: inline-block;
+}
+body .footer .end .cctvf.aba {
+  margin-left: 1%;
+}
+@media only screen and (min-width: 1251px) and (max-width: 1679px) {
+  body #middleArea {
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+  body #middleArea #area-content {
+    width: 75%;
+    margin: 0 0 0 15%;
+  }
+  body #middleArea #area-content .ota {
+    margin-left: -54%;
+    margin-top: 30%;
+  }
+  body .cctv-5 {
+    width: 100%;
+  }
+  body .cctv-5 p {
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    color: #000;
+    margin: 85px 0 0 30px;
+    text-align: center;
+  }
+  body .cctv-6 {
+    width: 100%;
+  }
+  body .cctv-6 ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 77%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+  }
+  body .cctv-6 ul li {
+    margin-left: 20px;
+    white-space: wrap;
+    width: 44%;
+    height: 540px;
+    margin-top: 47px;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  body .cctv-6 ul li:hover {
+    border: 1px solid #E6E6E6;
+  }
+  body .cctv-6 ul li div {
+    white-space: wrap;
+    width: 100%;
+    height: 100%;
+  }
+  body .cctv-6 ul li div img {
+    width: 100%;
+    height: 320px;
+  }
+  body .cctv-6 ul li div .cctv1 {
+    font-size: 20px;
+    width: 90%;
+    color: #333333;
+    text-align: center;
+    margin: 30px auto 20px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 1;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+  }
+  body .cctv-6 ul li div .cctv2 {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.88;
+    letter-spacing: -0.0016rem;
+    text-align: left;
+    color: #787878;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 3;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+  }
+  body .cctv-6 ul li div section {
+    margin-left: 25px;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv3 {
+    color: #B4B4b4;
+  }
+  body .cctv-6 ul li div section .cctv7 {
+    color: #f5275f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv7 img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  body .cctv-6 {
+    width: 100%;
+  }
+  body .cctv-6 ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-bottom: 1%;
+  }
+  body .cctv-6 ul li {
+    margin-left: 20px;
+    white-space: wrap;
+    width: 41%;
+    padding-bottom: 2%;
+    margin-top: 47px;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+  }
+  body .cctv-6 ul li:hover {
+    border: 1px solid #E6E6E6;
+  }
+  body .cctv-6 ul li div {
+    white-space: wrap;
+    width: 100%;
+  }
+  body .cctv-6 ul li div img {
+    width: 100%;
+    height: 50%;
+  }
+  body .cctv-6 ul li div .cctv1 {
+    font-size: 20px;
+    width: 90%;
+    color: #333333;
+    text-align: center;
+    margin: 30px auto 20px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 1;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+  }
+  body .cctv-6 ul li div .cctv2 {
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.88;
+    letter-spacing: -0.0016rem;
+    text-align: left;
+    color: #787878;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 3;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+  }
+  body .cctv-6 ul li div section {
+    margin-left: 25px;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv3 {
+    color: #B4B4b4;
+  }
+  body .cctv-6 ul li div section .cctv7 {
+    color: #f5275f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv7 img {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #nav-ul li,
+  #qiu img,
+  #qiu span {
+    display: none;
+  }
+  body #mokuai {
+    width: 87.5% !important;
+    margin: 45px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body #mokuai span:nth-child(1) {
+    width: 33% !important;
+    height: 160px;
+    background-image: url('../imges/introduce.@c14c4f74.png');
+    background-repeat: no-repeat;
+    background-size: 100% 160px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  body #mokuai span:nth-child(2) {
+    width: 33% !important;
+    height: 160px;
+    background-image: url('../imges/culture.@d8a537c2.png');
+    background-repeat: no-repeat;
+    background-size: 385px 160px;
+    font-size: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+  }
+  body #mokuai span:nth-child(3) {
+    width: 33% !important;
+    height: 160px;
+    background-image: url('../imges/team.@b030a264.png');
+    background-repeat: no-repeat;
+    background-size: 385px 160px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  body #head {
+    padding-bottom: 445px;
+    background-size: 1340px 540px;
+    background-position-x: 50%;
+  }
+  body #head #left {
+    margin-left: -297px;
+    height: 937px;
+    width: 280px;
+    background-color: #faf9f9;
+    position: absolute;
+    display: flex;
+    z-index: 101;
+    flex-direction: column;
+    transition: all 0.4s;
+  }
+  body #head #left .language {
+    width: 100%;
+    height: 63px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    cursor: pointer;
+  }
+  body #head #left .language span {
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    height: 16px;
+    width: 20px;
+    color: #D4D4D4;
+  }
+  body #head #left .language span:nth-child(1) {
+    color: #333333;
+    border-right: 2px solid #333333;
+    padding-right: 10px;
+  }
+  body #head #left .language span:nth-child(2) {
+    border-right: 2px solid #D4D4D4;
+    padding-right: 10px;
+    margin-left: 10px;
+  }
+  body #head #left .language span:nth-child(3) {
+    border-right: 2px solid #D4D4D4;
+    padding-right: 10px;
+    margin-left: 10px;
+  }
+  body #head #left > img {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 40px;
+    left: 35px;
+  }
+  body #head #left #na-l {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    left: 110px;
+  }
+  body #head #left #na-l span {
+    cursor: pointer;
+  }
+  body #head #left span {
+    display: inline-block;
+    height: 5%;
+    margin-top: 10px;
+    color: #333333;
+  }
+  @keyframes da {
+    from {
+      margin-top: 10px;
+    }
+    to {
+      margin-top: 0;
+    }
+  }
+  #navbar > img {
+    display: block !important;
+    animation: da 0.1s linear;
+    cursor: pointer;
+  }
+  #areaLogo {
+    width: 100%;
+  }
+  #areaLogo img {
+    width: 70px !important;
+    height: 25px !important;
+    margin-left: 29%;
+    animation: da 0.1s linear;
+  }
+  #textArea {
+    margin-top: 100px;
+    width: 87.5% !important;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #666;
+    margin: 2.8rem auto 0.4rem !important;
+    text-indent: 2em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .cctv20 {
+    transform: scaleY(0);
+  }
+  body .footer .cctv9 .cctv10 {
+    width: 190%;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body #text-a li span {
+    padding-left: 13%;
+    padding-right: 13%;
+  }
+  body #middleArea #area-content {
+    margin: 0 0;
+  }
+  body #middleArea #area-content li {
+    width: 800px;
+  }
+  body #middleArea #area-content li .t {
+    display: block;
+    margin: 25px 0 0 30px;
+  }
+  body #middleArea #area-content li .t img {
+    position: absolute;
+  }
+  body #head {
+    width: 100%;
+    height: 40%;
+    padding-bottom: 123%;
+    overflow: visible;
+    box-sizing: border-box;
+    background-image: url('../imges/header-bg.jpg');
+    background-size: 350% ;
+    background-position: 49% -33px;
+  }
+  body #textArea {
+    margin-top: 100px;
+    width: 95% !important;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #666;
+    margin: 30px auto 0.4rem !important;
+    text-indent: 2em;
+    font-size: 14px;
+  }
+  body #mokuai {
+    width: 95% !important;
+    height: 850px !important;
+    margin: 45px auto;
+    display: block !important;
+    flex-direction: column !important;
+  }
+  body #mokuai span:nth-child(1) {
+    width: 100% !important;
+    height: 270px;
+    background-image: url('../imges/introduce.@c14c4f74.png');
+    background-size: 100% 270px ;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body #mokuai span:nth-child(2) {
+    width: 100% !important;
+    height: 270px;
+    background-image: url('../imges/culture.@d8a537c2.png');
+    background-size: 100% 100%;
+    font-size: 30px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    margin: 30px 0px 0 0px;
+  }
+  body #mokuai span:nth-child(3) {
+    width: 100% !important;
+    height: 270px;
+    background-image: url('../imges/team.@b030a264.png');
+    background-size: 100% 100%;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    margin: 30px 0px 0 0px;
+  }
+  body .cctv-5 {
+    width: 100%;
+  }
+  body .cctv-5 p {
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    color: #000;
+    margin: 45px 0 0 30px;
+    text-align: left !important;
+  }
+  body .cctv-6 {
+    width: 100%;
+  }
+  body .cctv-6 .otb {
+    margin-left: 30%;
+  }
+  body .cctv-6 ul {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+  }
+  body .cctv-6 ul li {
+    position: relative;
+    margin-top: 10px;
+    margin-left: -15px;
+    height: 100px;
+    white-space: wrap;
+    width: 90%;
+    padding-bottom: 0%;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  body .cctv-6 ul li div {
+    height: 100%;
+  }
+  body .cctv-6 ul li div img {
+    float: left;
+    width: 178px;
+    height: 100%;
+  }
+  body .cctv-6 ul li div .cctv1 {
+    position: absolute;
+    left: 185px;
+    display: block;
+    width: 200px;
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    margin: 0px auto 20px 0;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 1;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+    width: 370px;
+  }
+  body .cctv-6 ul li div .cctv2 {
+    transform: scaleY(0);
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.88;
+    letter-spacing: -0.0016rem;
+    text-align: left;
+    color: #787878;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /** 对象作为伸缩盒子模型显示 **/
+    -webkit-line-clamp: 3;
+    /** 显示的行数 **/
+    -webkit-box-orient: vertical;
+  }
+  body .cctv-6 ul li div section {
+    margin-left: 25px;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv3 {
+    color: #B4B4b4;
+    position: absolute;
+    top: 75px;
+    font-size: 12px;
+    left: 190px;
+  }
+  body .cctv-6 ul li div section .cctv7 {
+    transform: scaleY(0);
+    color: #f5275f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .cctv-6 ul li div section .cctv7 img {
+    width: 32px;
+    height: 32px;
+  }
+  body .cctv9 {
+    width: 100%;
+  }
+  body .cctv9 .cctv10 {
+    width: 100%;
+    margin-left: -20%;
+    display: block !important;
+  }
+  body .cctv9 .cctv10 > li {
+    border-bottom: 1px solid #E5E5E5;
+    width: 72% !important;
+    font-size: 14px;
+    display: inline-block !important;
+  }
+  body .cctv9 .cctv10 > li .trs {
+    transition: all 0.6s;
+    display: block !important;
+    float: right;
+    margin-top: 5%;
+  }
+  body .cctv9 .cctv10 > li ol {
+    transition: all 0.2s !important;
+    height: 0 ;
+    overflow: hidden ;
+    margin-left: 3%;
+  }
+  body .cctv9 .cctv10 > li ol li {
+    position: static !important;
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+  body .cctv9 .cctv10 > li ol li a {
+    font-size: 14px !important;
+    color: #333333 !important;
+  }
+}
